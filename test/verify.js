@@ -58,7 +58,7 @@ assert(
   'Step 1 Exclusive to Monkhood Members badge is present'
 );
 assert(
-  htmlContent.includes('We are excited to connect with you! To get started, let us know if you are already a part of the Monkhood family.'),
+  htmlContent.includes('Secure your exclusive 1-on-1 session with Deepanshu Bagde. First, please confirm if you are currently an active member of the Monkhood community.'),
   'Step 1 Gateway text matches exact prompt'
 );
 assert(
