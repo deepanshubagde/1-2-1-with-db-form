@@ -1,0 +1,19 @@
+{
+  "name": "monkhood-session-funnel",
+  "version": "1.0.0",
+  "description": "Minimalistic multi-step conditional funnel and 1-on-1 qualifier form for Monkhood",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "funnel",
+    "monkhood",
+    "qualification",
+    "form",
+    "minimalist"
+  ],
+  "author": "Deepanshu Bagde",
+  "license": "MIT"
+}

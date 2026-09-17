@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Monkhood | 1-on-1 Session with Mr. Deepanshu Bagde</title>
+  <meta name="description" content="Exclusive 1-on-1 Mentorship and Breakthrough Session qualifier form for Monkhood Community Members with Mr. Deepanshu Bagde.">
+  <meta name="theme-color" content="#0d121c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22%230f172a%22/><circle cx=%2250%22 cy=%2250%22 r=%2220%22 fill=%22%23fbbf24%22/></svg>">
+</head>
+<body>
+
+  <main>
+    <!-- ============================================================== -->
+    <!-- STEP 1: The Initial Gateway Screen                             -->
+    <!-- ============================================================== -->
+    <section class="view-section gateway-view active" id="view-gateway" style="display: flex;">
+      <div class="gateway-card">
+        <!-- Logo Integration: Monkhood Logo -->
+        <div class="gateway-logo-wrap">
+          <img src="/assets/monkhood-logo.jpg" alt="Monkhood Logo" class="gateway-logo">
+        </div>
+
+        <div class="community-pill" role="status" aria-label="Exclusive to Monkhood Members">
+          <span class="pulsing-dot-wrap">
+            <span class="pulsing-ring"></span>
+            <span class="pulsing-dot"></span>
+          </span>
+          <span class="pill-text">Exclusive to Monkhood Members</span>
+          <svg class="sparkle-icon" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/>
+          </svg>
+        </div>
+
+        <h1 class="gateway-title">
+          We are excited to connect with you! To get started, let us know if you are already a part of the Monkhood family.
+        </h1>
+
+        <div class="gateway-options" role="group" aria-label="Community Membership Status">
+          <!-- Button A: Yes -->
+          <button type="button" class="option-btn" id="btn-gateway-yes" data-value="yes">
+            <span>Yes, I am a Monkhood Member</span>
+            <span class="btn-indicator"></span>
+          </button>
+
+          <!-- Button B: No -->
+          <button type="button" class="option-btn" id="btn-gateway-no" data-value="no">
+            <span>No, I am not a Monkhood Member</span>
+            <span class="btn-indicator"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- STEP 2: The Non-Member Flow                                    -->
+    <!-- ============================================================== -->
+    <section class="view-section non-member-view" id="view-non-member" style="display: none;">
+      <div class="non-member-card">
+        <!-- Monkhood Club Banner -->
+        <div class="non-member-banner-wrap">
+          <img src="/assets/monkhood-club-banner.jpg" alt="Monkhood Club - Your Digital Sangha for Mindfulness, Wisdom & Personal Transformation" class="non-member-banner-img">
+        </div>
+
+        <div class="community-pill" style="margin-bottom: 1.25rem;">
+          <span class="pulsing-dot"></span>
+          <span>Community Membership</span>
+        </div>
+
+        <p class="non-member-message">
+          These 1-on-1 breakthrough sessions are currently reserved exclusively for Monkhood Community Members. We’d love to welcome you inside! Click below to join the family and unlock your access to personalized mentorship.
+        </p>
+
+        <div class="non-member-actions">
+          <a href="https://join.monkhoodclub.com" target="_blank" rel="noopener noreferrer" class="join-cta-btn" id="btn-join-monkhood">
+            <span>Join the Monkhood Community</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+
+          <button type="button" class="secondary-btn" id="btn-back-to-gateway">
+            ← Change answer / Go back
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- STEP 3: The Member Flow (One-Page Qualifier Form)              -->
+    <!-- ============================================================== -->
+    <section class="view-section member-form-view" id="view-member-form" style="display: none;">
+      <div class="container">
+        
+        <!-- Header Banner: One-to-One Counselling with Mr. Deepanshu Bagde -->
+        <div class="form-header-container">
+          <div class="form-header-aspect">
+            <img src="/assets/header-counselling.png" alt="One-to-One Counselling with Mr. Deepanshu Bagde - Clarity, Guidance, A Calmer You">
+          </div>
+        </div>
+
+        <!-- Form Intro Title Card -->
+        <div class="form-intro-card">
+          <h1>1-on-1 Breakthrough Session with Mr. Deepanshu Bagde</h1>
+          <div class="form-metadata-pills">
+            <span class="meta-pill">⏱️ Approx. 3-4 mins</span>
+            <span class="meta-pill">🔒 100% Confidential</span>
+            <span class="meta-pill">⚡ Direct 1-on-1 Mentorship</span>
+          </div>
+        </div>
+
+        <!-- THE 13 FORM QUESTIONS -->
+        <form id="qualifier-form" novalidate>
+          
+          <!-- Q1: Full Name -->
+          <div class="question-card" id="q-card-1" data-q="1">
+            <div class="question-header">
+              <span class="question-number">01</span>
+              <div>
+                <label for="q1-fullName" class="question-title">
+                  Full Name <span class="required-mark">*</span>
+                </label>
+                <div class="question-description">Please enter your official first and last name.</div>
+              </div>
+            </div>
+            <input type="text" id="q1-fullName" name="fullName" class="text-input" placeholder="e.g. Rahul Sharma" required autocomplete="name">
+            <div class="field-error-msg">Please enter your full name.</div>
+          </div>
+
+          <!-- Q2: Email Address -->
+          <div class="question-card" id="q-card-2" data-q="2">
+            <div class="question-header">
+              <span class="question-number">02</span>
+              <div>
+                <label for="q2-email" class="question-title">
+                  Email Address <span class="required-mark">*</span>
+                </label>
+                <div class="question-description">We will send your session confirmation and calendar invite here.</div>
+              </div>
+            </div>
+            <input type="email" id="q2-email" name="email" class="text-input" placeholder="name@example.com" required autocomplete="email">
+            <div class="field-error-msg">Please provide a valid email address.</div>
+          </div>
+
+          <!-- Q3: Phone Number -->
+          <div class="question-card" id="q-card-3" data-q="3">
+            <div class="question-header">
+              <span class="question-number">03</span>
+              <div>
+                <label for="q3-phone" class="question-title">
+                  Phone Number <span class="required-mark">*</span>
+                </label>
+                <div class="question-description">For urgent scheduling updates and WhatsApp confirmation.</div>
+              </div>
+            </div>
+            <input type="tel" id="q3-phone" name="phone" class="text-input" placeholder="+91 98765 43210" required autocomplete="tel">
+            <div class="field-error-msg">Please enter a valid phone number.</div>
+          </div>
+
+          <!-- Q4: Gender -->
+          <div class="question-card" id="q-card-4" data-q="4">
+            <div class="question-header">
+              <span class="question-number">04</span>
+              <div>
+                <span class="question-title">
+                  Gender <span class="required-mark">*</span>
+                </span>
+                <div class="question-description">Select the option you identify with.</div>
+              </div>
+            </div>
+            <div class="radio-group" role="radiogroup" aria-label="Gender">
+              <label class="radio-tile">
+                <input type="radio" name="gender" value="Male" required>
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Male</span>
+              </label>
+              <label class="radio-tile">
+                <input type="radio" name="gender" value="Female">
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Female</span>
+              </label>
+              <label class="radio-tile">
+                <input type="radio" name="gender" value="Prefer not to say">
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Prefer not to say</span>
+              </label>
+            </div>
+            <div class="field-error-msg">Please select an option.</div>
+          </div>
+
+          <!-- Q5: Location -->
+          <div class="question-card" id="q-card-5" data-q="5">
+            <div class="question-header">
+              <span class="question-number">05</span>
+              <div>
+                <label for="q5-location" class="question-title">
+                  Location (City/Country) <span class="required-mark">*</span>
+                </label>
+                <div class="question-description">Helps us coordinate timezones for your call.</div>
+              </div>
+            </div>
+            <input type="text" id="q5-location" name="location" class="text-input" placeholder="e.g. Mumbai, India or Dubai, UAE" required>
+            <div class="field-error-msg">Please provide your city and country.</div>
+          </div>
+
+          <!-- Q6: Current Journey -->
+          <div class="question-card" id="q-card-6" data-q="6">
+            <div class="question-header">
+              <span class="question-number">06</span>
+              <div>
+                <span class="question-title">
+                  Which of the following best describes your current journey? <span class="required-mark">*</span>
+                </span>
+                <div class="question-description">Select your primary professional occupation or pursuit.</div>
+              </div>
+            </div>
+            <div class="radio-group" role="radiogroup" aria-label="Current Journey">
+              <label class="radio-tile">
+                <input type="radio" name="currentJourney" value="Business / Entrepreneur" required>
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Business / Entrepreneur</span>
+              </label>
+              <label class="radio-tile">
+                <input type="radio" name="currentJourney" value="Self-employed / Freelancer">
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Self-employed / Freelancer</span>
+              </label>
+              <label class="radio-tile">
+                <input type="radio" name="currentJourney" value="Job / Working professional">
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Job / Working professional</span>
+              </label>
+              <label class="radio-tile">
+                <input type="radio" name="currentJourney" value="Trainer / Coach / Speaker / Author">
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Trainer / Coach / Speaker / Author</span>
+              </label>
+              <label class="radio-tile">
+                <input type="radio" name="currentJourney" value="Housewife / Homemaker">
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Housewife / Homemaker</span>
+              </label>
+              <label class="radio-tile">
+                <input type="radio" name="currentJourney" value="Student">
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Student</span>
+              </label>
+            </div>
+            <div class="field-error-msg">Please choose the option that best describes you.</div>
+          </div>
+
+          <!-- Q7: Breakthrough Area -->
+          <div class="question-card" id="q-card-7" data-q="7">
+            <div class="question-header">
+              <span class="question-number">07</span>
+              <div>
+                <span class="question-title">
+                  Which area of your life feels most ready for a massive breakthrough right now? <span class="required-mark">*</span>
+                </span>
+                <div class="question-description">Identify your top priority focal point.</div>
+              </div>
+            </div>
+            <div class="radio-group" role="radiogroup" aria-label="Breakthrough Area">
+              <label class="radio-tile">
+                <input type="radio" name="breakthroughArea" value="Career, Business, or Financial Growth" required>
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Career, Business, or Financial Growth</span>
+              </label>
+              <label class="radio-tile">
+                <input type="radio" name="breakthroughArea" value="Mindset, Deep Inner Peace, and Emotional Well-being">
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Mindset, Deep Inner Peace, and Emotional Well-being</span>
+              </label>
+              <label class="radio-tile">
+                <input type="radio" name="breakthroughArea" value="Productivity, Focus, and Daily Consistency">
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Productivity, Focus, and Daily Consistency</span>
+              </label>
+              <label class="radio-tile">
+                <input type="radio" name="breakthroughArea" value="Finding My True Purpose and Life Direction">
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Finding My True Purpose and Life Direction</span>
+              </label>
+            </div>
+            <div class="field-error-msg">Please select an area for your breakthrough.</div>
+          </div>
+
+          <!-- Q8: Untapped Potential -->
+          <div class="question-card" id="q-card-8" data-q="8">
+            <div class="question-header">
+              <span class="question-number">08</span>
+              <div>
+                <span class="question-title">
+                  Do you often feel a deep sense of untapped potential inside you, just waiting for the right guidance to finally unlock it? <span class="required-mark">*</span>
+                </span>
+              </div>
+            </div>
+            <div class="radio-group" role="radiogroup" aria-label="Untapped Potential">
+              <label class="radio-tile">
+                <input type="radio" name="untappedPotential" value="Yes, I know I am meant for so much more" required>
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Yes, I know I am meant for so much more</span>
+              </label>
+              <label class="radio-tile">
+                <input type="radio" name="untappedPotential" value="I'm not entirely sure, but I want to find out">
+                <span class="tile-indicator"></span>
+                <span class="tile-label">I'm not entirely sure, but I want to find out</span>
+              </label>
+            </div>
+            <div class="field-error-msg">Please select an option.</div>
+          </div>
+
+          <!-- Q9: Exhausted & Ready for Direction -->
+          <div class="question-card" id="q-card-9" data-q="9">
+            <div class="question-header">
+              <span class="question-number">09</span>
+              <div>
+                <span class="question-title">
+                  Are you feeling exhausted from trying to figure everything out on your own, and finally ready for clear, personalized direction to accelerate your journey? <span class="required-mark">*</span>
+                </span>
+              </div>
+            </div>
+            <div class="radio-group" role="radiogroup" aria-label="Ready for Direction">
+              <label class="radio-tile">
+                <input type="radio" name="readyForDirection" value="Yes, I am ready to stop guessing and start moving faster" required>
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Yes, I am ready to stop guessing and start moving faster</span>
+              </label>
+              <label class="radio-tile">
+                <input type="radio" name="readyForDirection" value="No, I still prefer to try doing it on my own for now">
+                <span class="tile-indicator"></span>
+                <span class="tile-label">No, I still prefer to try doing it on my own for now</span>
+              </label>
+            </div>
+            <div class="field-error-msg">Please select an option.</div>
+          </div>
+
+          <!-- Q10: Committed to Roadmap -->
+          <div class="question-card" id="q-card-10" data-q="10">
+            <div class="question-header">
+              <span class="question-number">10</span>
+              <div>
+                <span class="question-title">
+                  If you were handed a clear, step-by-step roadmap tailored specifically to your challenges, would you be fully committed to following it? <span class="required-mark">*</span>
+                </span>
+              </div>
+            </div>
+            <div class="radio-group" role="radiogroup" aria-label="Committed to Roadmap">
+              <label class="radio-tile">
+                <input type="radio" name="committedToRoadmap" value="Absolutely. I am completely ready for a positive change" required>
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Absolutely. I am completely ready for a positive change</span>
+              </label>
+              <label class="radio-tile">
+                <input type="radio" name="committedToRoadmap" value="I might need some time to think about it">
+                <span class="tile-indicator"></span>
+                <span class="tile-label">I might need some time to think about it</span>
+              </label>
+            </div>
+            <div class="field-error-msg">Please select an option.</div>
+          </div>
+
+          <!-- Q11: Ready to Invest Energy -->
+          <div class="question-card" id="q-card-11" data-q="11">
+            <div class="question-header">
+              <span class="question-number">11</span>
+              <div>
+                <span class="question-title">
+                  True transformation happens the moment you decide to take action. Are you ready to step into a safe, non-judgmental space and invest your energy into becoming the best version of yourself? <span class="required-mark">*</span>
+                </span>
+              </div>
+            </div>
+            <div class="radio-group" role="radiogroup" aria-label="Ready to Invest Energy">
+              <label class="radio-tile">
+                <input type="radio" name="investEnergy" value="Yes, I am choosing to prioritize my growth" required>
+                <span class="tile-indicator"></span>
+                <span class="tile-label">Yes, I am choosing to prioritize my growth</span>
+              </label>
+              <label class="radio-tile">
+                <input type="radio" name="investEnergy" value="I am still hesitant">
+                <span class="tile-indicator"></span>
+                <span class="tile-label">I am still hesitant</span>
+              </label>
+            </div>
+            <div class="field-error-msg">Please select an option.</div>
+          </div>
+
+          <!-- Q12: Why Mr. Deepanshu Bagde -->
+          <div class="question-card" id="q-card-12" data-q="12">
+            <div class="question-header">
+              <span class="question-number">12</span>
+              <div>
+                <label for="q12-whyDeepanshu" class="question-title">
+                  Out of all the choices and voices out there, what specifically drew you to seek this 1-on-1 conversation with Mr. Deepanshu Bagde? <span class="required-mark">*</span>
+                </label>
+                <div class="question-description">A short sentence or specific insight that resonated with you.</div>
+              </div>
+            </div>
+            <input type="text" id="q12-whyDeepanshu" name="whyDeepanshu" class="text-input" placeholder="What resonated with you most..." required>
+            <div class="field-error-msg">Please share what drew you to this session.</div>
+          </div>
+
+          <!-- Q13: Desired Breakthrough & Problem Solved -->
+          <div class="question-card" id="q-card-13" data-q="13">
+            <div class="question-header">
+              <span class="question-number">13</span>
+              <div>
+                <label for="q13-breakthroughVision" class="question-title">
+                  What is the exact problem you want to solve in this session, and what does your ideal outcome look like? <span class="required-mark">*</span>
+                </label>
+                <div class="question-description">Please share in as much detail as you can</div>
+              </div>
+            </div>
+            <textarea id="q13-breakthroughVision" name="breakthroughVision" class="textarea-input" placeholder="Be as specific and open as possible about the core obstacle and the breakthrough you desire..." required></textarea>
+            <div class="field-error-msg">Please provide your perspective on this question.</div>
+          </div>
+
+          <!-- STEP 4: Submission Container -->
+          <div class="form-submit-container">
+            <button type="submit" class="submit-slot-btn" id="btn-submit-form">
+              <span class="btn-text">Secure My Slot</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </button>
+            <p class="submit-caption">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" class="lock-icon" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span>Your information is transmitted securely and handled with strict confidentiality.</span>
+            </p>
+          </div>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ============================================================== -->
+  <!-- Settings Modal (Razorpay & Google Sheet Webhook Config)        -->
+  <!-- ============================================================== -->
+  <div class="modal-overlay" id="modal-settings" role="dialog" aria-modal="true" aria-labelledby="settings-modal-title">
+    <div class="modal-card settings-modal-card">
+      <button type="button" class="modal-close-btn" id="btn-close-settings" aria-label="Close modal">×</button>
+      <h2 class="redirect-title" id="settings-modal-title" style="margin-bottom: 1.25rem;">Funnel Configuration</h2>
+
+      <div class="settings-field">
+        <label for="cfg-razorpay-url" class="settings-label">Razorpay Checkout URL</label>
+        <input type="url" id="cfg-razorpay-url" class="text-input" placeholder="https://rzp.io/l/your-link">
+        <div class="settings-help">The user is redirected here immediately after submitting the qualifier form.</div>
+      </div>
+
+      <div class="settings-field">
+        <label for="cfg-webhook-url" class="settings-label">Google Sheets Webhook URL</label>
+        <input type="url" id="cfg-webhook-url" class="text-input" placeholder="https://script.google.com/macros/s/.../exec">
+        <div class="settings-help">Google Apps Script Web App URL from your Google Sheet. See <code>google-sheets-integration/SETUP_GUIDE.md</code>.</div>
+      </div>
+
+      <div style="margin-top: 1.75rem; display: flex; gap: 0.75rem; justify-content: flex-end;">
+        <button type="button" class="secondary-btn" id="btn-cancel-settings">Cancel</button>
+        <button type="button" class="primary-btn" id="btn-save-settings" style="width: auto; padding: 0.75rem 1.5rem;">Save Settings</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- Submissions Viewer Drawer / Modal                              -->
+  <!-- ============================================================== -->
+  <div class="modal-overlay" id="modal-admin" role="dialog" aria-modal="true" aria-labelledby="admin-modal-title">
+    <div class="modal-card" style="max-width: 780px; text-align: left; max-height: 85vh; display: flex; flex-direction: column;">
+      <button type="button" class="modal-close-btn" id="btn-close-admin" aria-label="Close modal">×</button>
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.5rem;">
+        <h2 class="redirect-title" id="admin-modal-title" style="margin: 0;">Qualifier Submissions</h2>
+        <a href="/api/export-csv" class="primary-btn" style="width: auto; font-size: 0.85rem; padding: 0.5rem 1rem;" download>
+          Export to CSV
+        </a>
+      </div>
+      <div id="admin-submissions-list" style="overflow-y: auto; flex: 1; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1rem; background: var(--bg-subtle);">
+        <p style="color: var(--text-muted); text-align: center; padding: 2rem 0;">Loading submissions...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/js/config.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
